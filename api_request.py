@@ -33,7 +33,7 @@ request = {
     'rowLimit': 25000, #set limit between 0 to 25000
     'startRow': 100000 #initially set 0
 }
-get_response = send_request(search_console_ser, 'https://www.wikilogy.com', request)
+get_response = send_request(search_console_ser, 'YOUR-DOMAIN', request) #put the domain here
 
 #writingg to csv
 csv_file = open('query_haha.csv','a+',encoding='utf-8-sig',errors='ignore', newline='')
