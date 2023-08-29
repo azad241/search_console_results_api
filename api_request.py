@@ -15,7 +15,7 @@ def send_request(service, property_uri, request):
 CLIENT_ID = 'YOUR_CLIENT_ID' #your CLIENT_ID
 CLIENT_SECRET = 'YOUR_CLIENT_SECRET' #your CLIENT_SECRET
 OAUTH_SCOPE = 'https://www.googleapis.com/auth/webmasters.readonly'
-REDIRECT_URI = 'https://www.wikilogy.com' #put your redirect url
+REDIRECT_URI = 'https://www.domain.com' #put your redirect url
 flow = OAuth2WebServerFlow(CLIENT_ID, CLIENT_SECRET, OAUTH_SCOPE, REDIRECT_URI)
 authorize_url = flow.step1_get_authorize_url()
 print('Click the link and authorize: ' + authorize_url)
