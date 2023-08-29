@@ -33,6 +33,10 @@ request = {
     'rowLimit': 25000, #set limit between 0 to 25000
     'startRow': 100000 #initially set 0
 }
+
+# site_list = webmasters_service.sites().list().execute()
+# print(site_list)
+#for root domain put sc-domain:
 get_response = send_request(search_console_ser, 'YOUR-DOMAIN', request) #put the domain here
 
 #writingg to csv
